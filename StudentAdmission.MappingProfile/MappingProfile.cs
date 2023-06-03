@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using StudentAdmission.DTOs;
-using StudentAdmission.Models;
+using StudentAdmission.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

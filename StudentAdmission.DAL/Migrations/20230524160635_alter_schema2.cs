@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace StudentAdmission.Configuration.Migrations
+namespace StudentAdmission.DAL.Migrations
 {
     /// <inheritdoc />
     public partial class alter_schema2 : Migration

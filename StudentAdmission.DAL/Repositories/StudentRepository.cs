@@ -1,14 +1,15 @@
-﻿using StudentAdmission.Configuration.Config;
-using StudentAdmission.DAL.GenericRepository;
+﻿using StudentAdmission.DAL.Config;
 using StudentAdmission.DAL.Repositories;
-using StudentAdmission.Models;
+using StudentAdmission.DAL.Repositories.GenericRepository;
+using StudentAdmission.Models.Entities;
+using StudentAdmission.Models.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentAdmission.DAL.Services
+namespace StudentAdmission.DAL.Repositories
 {
     public class StudentRepository : RepositoryBase<ApplicationUser>, IStudentRepository
     {

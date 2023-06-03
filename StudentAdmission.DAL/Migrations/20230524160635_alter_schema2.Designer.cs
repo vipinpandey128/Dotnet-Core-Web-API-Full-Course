@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StudentAdmission.Configuration.Config;
+using StudentAdmission.DAL.Config;
 
 #nullable disable
 
-namespace StudentAdmission.Configuration.Migrations
+namespace StudentAdmission.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230524160635_alter_schema2")]

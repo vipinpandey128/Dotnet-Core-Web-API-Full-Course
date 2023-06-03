@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudentAdmission.DAL.Repositories;
 using StudentAdmission.DTOs;
-using StudentAdmission.Models;
+using StudentAdmission.Models.Entities;
+using StudentAdmission.Models.Interface;
 
 namespace StudentAdmission.API.Controllers
 {

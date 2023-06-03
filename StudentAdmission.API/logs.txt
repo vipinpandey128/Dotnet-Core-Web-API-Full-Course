@@ -1,16 +1,30 @@
-29-05-2023 21:34:07 - GET - /swagger/index.html
-29-05-2023 21:34:08 - GET - /swagger/v1/swagger.json
-29-05-2023 21:34:13 - POST - /api/UserSubject/AssignSubject
-Attempted to divide by zero.
-29-05-2023 21:37:59 - GET - /swagger/index.html
-29-05-2023 21:38:01 - GET - /swagger/v1/swagger.json
-29-05-2023 21:39:40 - GET - /swagger/index.html = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
-29-05-2023 21:39:41 - GET - /swagger/v1/swagger.json = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
-29-05-2023 21:43:10 - GET - /swagger/index.html = 
-29-05-2023 21:43:11 - GET - /swagger/v1/swagger.json = 
-29-05-2023 21:43:37 - POST - /api/UserSubject/AssignSubject = {
+02-06-2023 21:44:03 - POST - /api/UserSubject = {
   "studentSubjectId": 0,
   "studentId": "string",
   "subjectId": 0,
   "sem": 0
+}
+02-06-2023 21:45:04 - POST - /api/UserSubject = {
+  "studentSubjectId": 0,
+  "studentId": "my class",
+  "subjectId": 1,
+  "sem": 3
+}
+02-06-2023 21:45:43 - POST - /api/UserSubject = {
+  "studentSubjectId": 0,
+  "studentId": "my class",
+  "subjectId": 1,
+  "sem": 3
+}
+02-06-2023 21:47:42 - POST - /api/UserSubject = {
+  "studentSubjectId": 0,
+  "studentId": "my class",
+  "subjectId": 1,
+  "sem": 3
+}
+02-06-2023 21:48:13 - POST - /api/UserSubject = {
+  "studentSubjectId": 0,
+  "studentId": "my class",
+  "subjectId": 1,
+  "sem": 3
 }

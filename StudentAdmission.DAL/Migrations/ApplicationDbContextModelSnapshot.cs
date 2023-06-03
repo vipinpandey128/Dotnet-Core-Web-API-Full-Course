@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StudentAdmission.Configuration.Config;
+using StudentAdmission.DAL.Config;
 
 #nullable disable
 
-namespace StudentAdmission.Configuration.Migrations
+namespace StudentAdmission.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -155,7 +155,7 @@ namespace StudentAdmission.Configuration.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("StudentAdmission.Models.ApplicationUser", b =>
+            modelBuilder.Entity("StudentAdmission.Models.Entities.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -250,7 +250,7 @@ namespace StudentAdmission.Configuration.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("StudentAdmission.Models.StudentSubject", b =>
+            modelBuilder.Entity("StudentAdmission.Models.Entities.StudentSubject", b =>
                 {
                     b.Property<int>("StudentSubjectId")
                         .ValueGeneratedOnAdd()
@@ -284,7 +284,7 @@ namespace StudentAdmission.Configuration.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("StudentAdmission.Models.ApplicationUser", null)
+                    b.HasOne("StudentAdmission.Models.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -293,7 +293,7 @@ namespace StudentAdmission.Configuration.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("StudentAdmission.Models.ApplicationUser", null)
+                    b.HasOne("StudentAdmission.Models.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -308,7 +308,7 @@ namespace StudentAdmission.Configuration.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("StudentAdmission.Models.ApplicationUser", null)
+                    b.HasOne("StudentAdmission.Models.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -317,7 +317,7 @@ namespace StudentAdmission.Configuration.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("StudentAdmission.Models.ApplicationUser", null)
+                    b.HasOne("StudentAdmission.Models.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

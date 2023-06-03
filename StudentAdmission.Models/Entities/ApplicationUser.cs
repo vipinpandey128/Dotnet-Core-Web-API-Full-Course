@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel;
 
-namespace StudentAdmission.Models
+namespace StudentAdmission.Models.Entities
 {
     public class ApplicationUser : IdentityUser
     {

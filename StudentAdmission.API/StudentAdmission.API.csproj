@@ -19,10 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StudentAdmission.Configuration\StudentAdmission.Configuration.csproj" />
     <ProjectReference Include="..\StudentAdmission.DAL\StudentAdmission.DAL.csproj" />
     <ProjectReference Include="..\StudentAdmission.DTO\StudentAdmission.DTOs.csproj" />
     <ProjectReference Include="..\StudentAdmission.MappingProfile\StudentAdmission.MappingProfile.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Attribute\" />
   </ItemGroup>
 
 </Project>

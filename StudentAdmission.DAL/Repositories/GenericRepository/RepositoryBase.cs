@@ -1,17 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StudentAdmission.Configuration.Config;
-using StudentAdmission.DAL.Interface;
+using StudentAdmission.DAL.Config;
+using StudentAdmission.Models.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentAdmission.DAL.GenericRepository
+namespace StudentAdmission.DAL.Repositories.GenericRepository
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected readonly ApplicationDbContext _context;
+        protected ApplicationDbContext _context { get; set; }
         public RepositoryBase(ApplicationDbContext context)
         {
             _context = context;

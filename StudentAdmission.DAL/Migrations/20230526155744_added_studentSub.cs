@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace StudentAdmission.Configuration.Migrations
+namespace StudentAdmission.DAL.Migrations
 {
     /// <inheritdoc />
     public partial class added_studentSub : Migration

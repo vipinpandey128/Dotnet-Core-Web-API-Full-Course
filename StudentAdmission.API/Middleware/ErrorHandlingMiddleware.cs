@@ -17,23 +17,23 @@ namespace StudentAdmission.API.Middleware
         {
             try
             {
-                var request = context.Request;
-                var body = request.Body;
+                //var request = context.Request;
+                //var body = request.Body;
 
-                //This line allows us to set the reader for the request back at the beginning of its stream.
-                request.EnableBuffering();
+                ////This line allows us to set the reader for the request back at the beginning of its stream.
+                //request.EnableBuffering();
 
-                //We now need to read the request stream.  First, we create a new byte[] with the same length as the request stream...
-                var buffer = new byte[Convert.ToInt32(request.ContentLength)];
+                ////We now need to read the request stream.  First, we create a new byte[] with the same length as the request stream...
+                //var buffer = new byte[Convert.ToInt32(request.ContentLength)];
 
-                //...Then we copy the entire request stream into the new buffer.
-                await request.Body.ReadAsync(buffer, 0, buffer.Length);
+                ////...Then we copy the entire request stream into the new buffer.
+                //await request.Body.ReadAsync(buffer, 0, buffer.Length);
 
-                //We convert the byte[] into a string using UTF8 encoding...
-                var bodyAsText = Encoding.UTF8.GetString(buffer);
+                ////We convert the byte[] into a string using UTF8 encoding...
+                //var bodyAsText = Encoding.UTF8.GetString(buffer);
 
-                string requestDetails = $"{DateTime.Now} - {context.Request.Method} - {context.Request.Path} = {bodyAsText}";
-                LogFile(requestDetails);
+                //string requestDetails = $"{DateTime.Now} - {context.Request.Method} - {context.Request.Path} = {bodyAsText}";
+                //LogFile(requestDetails);
 
                 await _next(context);
             }
